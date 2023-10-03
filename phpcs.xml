@@ -10,7 +10,7 @@
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
 	<exclude-pattern>*/languages/*</exclude-pattern>
-	
+
 
 	<!-- Show progress, show the error codes for each message (source). -->
 	<arg value="ps" />
@@ -23,12 +23,12 @@
 
 	<!-- Configs -->
 	<config name="minimum_supported_wp_version" value="5.0" /> <!-- Minimum WP Version -->
-	<config name="testVersion" value="5.6" /> <!-- Minimum PHP Version -->
-	<config name="text_domain" value="text_domain"/>
-	<config name="installed_paths" value="wpcs_path" />
+	<config name="testVersion" value="7.2" /> <!-- Minimum PHP Version -->
+	<config name="text_domain" value="advance-wp-slider"/>
+	<config name="installed_paths" value="F:\laragon\www\wpcs" />
 
 	<!-- Rules -->
-	
+
 	<rule ref="Squiz">
 		<exclude name="Squiz"/>
 		<exclude-pattern>index.php</exclude-pattern>
@@ -44,7 +44,7 @@
 
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="array" value="text_domain" />
+			<property name="text_domain" type="array" value="advance-wp-slider" />
 		</properties>
 	</rule>
 
